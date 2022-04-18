@@ -1,0 +1,83 @@
+    1  cd trybe/
+    2  ls
+    3  mkdir unix_tests
+    4  ls
+    5  cd unix_testes
+    6  cd unix_tests
+    7  touch trybe.txt
+    8  cp trybe.txt trybe_backup.txt 
+    9  ls
+   10  mv trybe.txt trybe_juan.txt
+   11  ls
+   12  mkdir backup
+   13  ls
+   14  mv trybe_backup.txt backup/
+   15  ls
+   16  ls *
+   17  mkdir backup2
+   18  cd backup
+   19  ls
+   20  mv trybe_backup.txt ../backup2/
+   21  ls
+   22  cd ..
+   23  ls +
+   24  ls *
+   25  rmdir backup
+   26  ls
+   27  mv backup2 backup
+   28  ls *
+   29  pwd
+   30  ls
+   31  rmdir backup
+   32  rm -r backup
+   33  ls
+   34  clear
+   35  touch skills.txt
+   36  ls
+   37  cat > skills.txt 
+   38  cat skills.txt 
+   39  head -5 skills.txt
+   40  tail -4 skills.txt
+   41  ls
+   42  rm *.txt
+   43  ls
+   44  history
+   45  history | tail -n 200 > meus_comandos.txt
+   46  ls
+   47  mv meus_comandos.txt ../trybe-exercises/fundamentos/bloco-01-unix-e-shell/dia-01-unix-e-bash-parte-1/
+   48  ls
+   49  explorer.exe .
+   50  history
+   51  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+   52  ls
+   53  cat countries.txt
+   54  less countries.txt 
+   55  grep 'Zambia' countries.txt 
+   56  grep 'Brazil' countries.txt 
+   57  grep 'brazil' countries.txt 
+   58  grep -l 'brazil' countries.txt 
+   59  grep -c 'brazil' countries.txt 
+   60  grep -a 'brazil' countries.txt 
+   61  touch phrases.txt
+   62  cat > phrases.txt 
+   63  apropos -n 'fox' phrases.txt
+   64  apropos 'fox' phrases.txt
+   65  less countries.txt 
+   66  grep -i brazil countries.txt 
+   67  ls
+   68  grep -v fox phrases.txt 
+   69  wc phrases.txt 
+   70  wc -w ph
+   71  wc -w phrases.txt 
+   72  wc -l phrases.txt 
+   73  wc -c phrases.txt 
+   74  touch empty.tbt empty.pdf
+   75  ls
+   76  ls *.txt
+   77  ls *.tbt *.txt
+   78  apropos ls
+   79  man ls
+   80  whatis ls
+   81  histoy
+   82  history
+   83  history | tail -n 200 > meus_comandos.txt

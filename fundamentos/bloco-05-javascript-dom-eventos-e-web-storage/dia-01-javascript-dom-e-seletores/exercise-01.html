@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p class="texts" id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p class="texts" id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.querySelector("#paragraph");
+      const title = document.querySelector('#page-title').innerText = 'Bunny Girl Senpai';
+      const paragraph2 = document.querySelector('#second-paragraph').style.color = "pink";
+      const subtitle = document.querySelector('#subtitle').innerText = 'Bunny Girl é muito bom, final lindo.';
+      paragraph.style.color = "red";
+      const classParagraphs = document.querySelectorAll('.texts')[0].style.color = 'blue';
+      const subtitleColor = document.querySelector('h4').style.color = 'yellow';
+    </script>
+  </body>
+</html>

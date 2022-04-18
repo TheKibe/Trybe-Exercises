@@ -1,0 +1,93 @@
+    1  cd trybe/trybe-exercises/fundamentos/bloco-01-unix-e-shell/dia-04-unix-e-bash-parte-2
+    2  mkdir unix_tests
+    3  cd unix_tests
+    4  ls
+    5  cat skills2.txt
+    6  cat > skills2.txt
+    7  cat >> skills2.txt
+    8  sort skills2.txt
+    9  wc -l skills2.txt
+   10  cat skills2.txt > top_skills.txt | head -3 | sort
+   11  ls
+   12  cat top_skills.txt
+   13  rm top_skills.txt
+   14  ls
+   15  cat skills2.txt
+   16  cat skills2.txt | head -3 | sort | > top_skills.txt
+   17  ls
+   18  cat top_skills.txt
+   19  cat skills2.txt
+   20  cat > phrases2.txt
+   21  grep br phrases2.txt | wc -l
+   22  grep -v br phrases2.txt | wc -l
+   23  cat >> phrases2.txt
+   24  cd ../../dia-03-unix-e-bash-parte-1
+   25  ls *
+   26  cd unix_tests
+   27  ls
+   28  cp countries.txt ../../dia-04-unix-e-bash-parte-2/unix_tests
+   29  ls
+   30  cd ../../dia-04-unix-e-bash-parte-2/unix_tests
+   31  ls *
+   32  cat phrases2.txt countries.txt > bunch_of_things.txt
+   33  less bunch_of_things.txt
+   34  sort > bunch_of_things.txt
+   35  ps
+   36  kill 1563
+   37  ls
+   38  ps
+   39  jobs
+   40  kill 1
+   41  kill %1
+   42  jobs
+   43  less bunch_of_things.txt
+   44  cat bunch_of_things.txt
+   45  rm bunch_of_things.txt
+   46  ls
+   47  cat phrases2.txt countries.txt > bunch_of_things.txt
+   48  less bunch_of_things.txt
+   49  sort >> bunch_of_things.txt
+   50  cat bunch_of_things.txt
+   51  explorer.exe .
+   52  sort bunch_of_things.txt > bunch_of_things.txt
+   53  less bunch_of_things.txt
+   54  cat bunch_of_things.txt
+   55  cat phrases2.txt countries.txt | sort | > bunch_of_things.txt
+   56  ls
+   57  less bunch_of_things.txt
+   58  cat bunch_of_things.txt
+   59  ls -l
+   60  chmod 666 bunch_of_things.txt
+   61  ls -l
+   62  chmod 444 bunch_of_things.txt
+   63  ls -l
+   64  chmod 644 bunch_of_things.txt
+   65  ls -l
+   66  ps
+   67  sleep 30 &
+   68  ps
+   69  kill 2572
+   70  ps
+   71  sleep 30
+   72  bg %1
+   73  ps
+   74  sleep 300 &
+   75  sleep 100 &
+   76  jobs
+   77  fg %1
+   78  jobs
+   79  fg %3
+   80  bg %3
+   81  hobs
+   82  jobs
+   83  kill all
+   84  kill sleep
+   85  jobs
+   86  kill
+   87  kill %sleep
+   88  ps
+   89  jobs
+   90  kill %1
+   91  jobs
+   92  ps
+   93  history
