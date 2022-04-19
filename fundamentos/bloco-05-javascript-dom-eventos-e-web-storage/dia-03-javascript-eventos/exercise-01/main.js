@@ -16,7 +16,6 @@ const myWebpage = document.getElementById('my-spotrybefy');
       const tech = document.querySelector('.tech');
       tech.classList.remove('tech')
       event.target.className = 'tech'
-      console.log(event.target);
     } 
     
     firstLi.addEventListener('click', addTechClass);
@@ -26,22 +25,22 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 
-    function changeText(text) {
+    function changeText() {
       const tech = document.querySelector('.tech');
       tech.innerHTML = input.value;
-      console.log(input.innerHTML);
     }
 
-    input.addEventListener('change', changeText);
+    input.addEventListener('keyup', changeText);
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
 
-    // function linkThree () {
-    //   myWebpage.innerHTML.link('https://github.com/TheKibe');
-    // }
-    //  aa myWebpage.addEventListener('dbclick', linkThree);
+    function linkGit() {
+      window.location.replace('https://github.com/TheKibe')
+    }
+
+    myWebpage.addEventListener('dblclick', linkGit);
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
