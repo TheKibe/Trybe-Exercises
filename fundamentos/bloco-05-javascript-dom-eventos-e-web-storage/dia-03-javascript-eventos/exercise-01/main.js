@@ -41,7 +41,7 @@ const myWebpage = document.getElementById('my-spotrybefy');
     // function linkThree () {
     //   myWebpage.innerHTML.link('https://github.com/TheKibe');
     // }
-    //   myWebpage.addEventListener('dbclick', linkThree);
+    //  aa myWebpage.addEventListener('dbclick', linkThree);
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
