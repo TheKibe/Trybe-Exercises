@@ -28,8 +28,8 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
     function changeText(text) {
       const tech = document.querySelector('.tech');
-      tech.innerText = input.innerHTML;
-      console.log(input.target);
+      tech.innerHTML = input.value;
+      console.log(input.innerHTML);
     }
 
     input.addEventListener('change', changeText);
@@ -38,8 +38,23 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
 
+    // function linkThree () {
+    //   myWebpage.innerHTML.link('https://github.com/TheKibe');
+    // }
+    //   myWebpage.addEventListener('dbclick', linkThree);
+
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+
+    function changeColor() {
+      myWebpage.style.color = 'rgb(130, 50, 255)';
+    }
+    function restoreColor() {
+      myWebpage.style.color = 'white';
+    }
+
+    myWebpage.addEventListener('mouseenter', changeColor);
+    myWebpage.addEventListener('mouseleave', restoreColor);
 
 // Segue abaixo um exemplo do uso de event.target:
 
