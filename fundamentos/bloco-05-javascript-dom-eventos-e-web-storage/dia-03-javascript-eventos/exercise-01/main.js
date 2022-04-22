@@ -16,6 +16,7 @@ const myWebpage = document.getElementById('my-spotrybefy');
       const tech = document.querySelector('.tech');
       tech.classList.remove('tech')
       event.target.className = 'tech'
+      input.value = '';
     } 
     
     firstLi.addEventListener('click', addTechClass);
