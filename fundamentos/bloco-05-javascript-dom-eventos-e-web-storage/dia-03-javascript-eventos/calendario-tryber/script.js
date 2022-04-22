@@ -17,7 +17,7 @@ function createDaysOfTheWeek() {
     
   //Exercício 1:
 
-  const idDays = document.querySelector('#days')
+  const idDays = document.querySelector('#days');
 
   function createDaysOfTheMonth() {
     const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
@@ -115,16 +115,84 @@ function createDaysOfTheWeek() {
   
   function addTask(task) {
     const createSpan = document.createElement('span');
-    const lineBreak = document.createElement('br');
     createSpan.innerHTML = task;
     myTasks.appendChild(createSpan);
-    myTasks.appendChild(lineBreak);
   };
 
-  addTask('Cozinhar');
-  addTask('Estudar DOM');
   addTask('Projeto Arte com Pixels')
 
   //Exercício 8:
 
-  
+  function legendColor(color) {
+    const div = document.createElement('div');
+    div.className = 'task';
+    div.style.backgroundColor = color;
+    myTasks.appendChild(div);
+  }
+
+  legendColor('green');
+
+  //Exercício 9:
+
+const taskDiv = document.querySelector('.task');
+
+function addSelected(event) {
+  if (event.target.classList[1] !== 'selected') {
+    event.target.classList.add('selected');
+  } else {
+    event.target.classList.remove('selected');
+  }
+  console.log(event.target.classList);
+}
+
+taskDiv.addEventListener('click', addSelected);
+
+//Exercício 10:
+
+const day = document.querySelector('.day');
+
+function markDay(event) {
+  const getColor = document.querySelector('.selected').style.backgroundColor;
+  console.log(event.target);
+  if (event.target.style.color !== getColor) {
+    event.target.style.color = 'green';
+  } else {
+    event.target.style.color = 'rgb(119,119,119)';
+  }
+}
+
+idDays.addEventListener('click', markDay);
+
+//Bônus:
+
+const button = document.querySelector('#btn-add');
+
+function compromissos() {
+  const text = document.querySelector('#task-input');
+  const ul = document.querySelector('.task-list');
+  const li = document.createElement('li');
+  console.log(text.value.length);
+  li.innerHTML = text.value;
+  if (text.value === '') {
+    alert('ERRO, nenhum compromisso foi escrito.');
+  } else {
+    ul.appendChild(li);
+    text.value = '';
+  }
+};
+
+button.addEventListener('click', compromissos);
+
+const input = document.querySelector('#task-input');
+
+input.addEventListener('keyup', function(event) {
+  const text = document.querySelector('#task-input');
+  const ul = document.querySelector('.task-list');
+  const li = document.createElement('li');
+  li.innerHTML = text.value;
+  if (event.key === 'Enter' && text.value.length > 0) {
+    ul.appendChild(li);
+    text.value = '';
+    console.log(text.value.length);
+  }
+});
