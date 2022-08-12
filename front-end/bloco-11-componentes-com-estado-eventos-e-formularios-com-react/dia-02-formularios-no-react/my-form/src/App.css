@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana;
+}
+
+body {
+  padding: 150px;
+  background-color: rgb(51, 45, 91);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  padding: 50px;
+  color: white;
+  background-color: rgb(127, 88, 155);
+}
+
+fieldset {
+  margin: 20px;
+  border: 0;
+}
+
+textarea {
+  border: 0;
+  border-radius: 20px;
+  width: 500px;
+}
+
+label {
+  padding-left: 30px;
+  padding-bottom: 5px;
+}
+
+.submit {
+  width: 100px;
+  height: 35px;
+}
